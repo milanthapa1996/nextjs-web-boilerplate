@@ -1,9 +1,6 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
-import {
-  BsArrowLeftCircle,
-  BsArrowRightCircle,
-} from "react-icons/bs";
+import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 
 const Directors = () => {
   return (
@@ -30,12 +27,13 @@ const Directors = () => {
   first-letter:text-5xl first-letter:text-slate-900
   first-letter:mr-3 first-letter:float-left"
                   >
-                    "DIMA is just awesome. It contains tons of predesigned
+                    &quot;DIMA is just awesome. It contains tons of predesigned
                     components and pages starting from login screen to complex
                     dashboard. Perfect choice for your next SaaS application.
                     Flowbite is just awesome. It contains tons of predesigned
                     components and pages starting from login screen to complex
-                    dashboard. Perfect choice for your next SaaS application."
+                    dashboard. Perfect choice for your next SaaS
+                    application.&quot;
                   </p>
                 </blockquote>
                 <figcaption className="flex items-center mt-6 space-x-3">
@@ -72,12 +70,13 @@ const Directors = () => {
   first-letter:text-5xl first-letter:text-slate-900
   first-letter:mr-3 first-letter:float-left"
                   >
-                    "DIMA is just awesome. It contains tons of predesigned
+                    &quot;DIMA is just awesome. It contains tons of predesigned
                     components and pages starting from login screen to complex
                     dashboard. Perfect choice for your next SaaS application.
                     Flowbite is just awesome. It contains tons of predesigned
                     components and pages starting from login screen to complex
-                    dashboard. Perfect choice for your next SaaS application."
+                    dashboard. Perfect choice for your next SaaS
+                    application.&quot;
                   </p>
                 </blockquote>
                 <figcaption className="flex items-center mt-6 space-x-3">
