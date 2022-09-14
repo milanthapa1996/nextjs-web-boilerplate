@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Navbar, Button, Dropdown, Avatar } from "flowbite-react";
+import Link from "next/link";
 
 const Header = () => {
   const [auth, setAuth] = useState(true);
@@ -45,7 +46,7 @@ const Header = () => {
               </Dropdown.Item>
             </Dropdown>
           ) : (
-            <a href="/auth/login">
+            <Link href="/auth/login">
               <Button
                 gradientMonochrome="success"
                 onClick={() => {
@@ -54,7 +55,7 @@ const Header = () => {
               >
                 Login
               </Button>
-            </a>
+            </Link>
           )}
           <Navbar.Toggle />
         </div>
