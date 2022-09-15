@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { BsSunrise, BsSunsetFill } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -29,7 +30,7 @@ const Header = () => {
               />
             </Link>
           </div>
-          <div className="flex md:order-2">
+          <div className="flex md:order-2 space-x-4">
             <button
               type="button"
               className="flex justify-center items-center text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
@@ -49,6 +50,9 @@ const Header = () => {
                   d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
                 ></path>
               </svg>
+            </button>
+            <button>
+              <BsSunsetFill className="text-2xl md:text-4xl text-gray-500 dark:text-gray-400" />
             </button>
             <button
               data-collapse-toggle="navbar-sticky"
