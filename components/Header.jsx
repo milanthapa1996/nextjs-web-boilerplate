@@ -4,24 +4,31 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    // <div classNameName="h-16 flex justify-between items-center px-4 sticky top-0 left-0 z-[50]">
-    //   <div>Logo</div>
-    //   <div>Menu</div>
-    //   <div>Profile</div>
-    // </div>
     <>
       <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="Picture of the author"
-              width={200}
-              height={45}
-              className="h-4 md:h-9 cursor-pointer"
-              layout="fixed"
-            />
-          </Link>
+          <div className="hidden sm:flex items-center">
+            <Link href="/">
+              <Image
+                src="/logo.png"
+                alt="Picture of the author"
+                width={200}
+                height={45}
+                className="h-4 md:h-9 cursor-pointer"
+              />
+            </Link>
+          </div>
+          <div className="sm:hidden flex items-center">
+            <Link href="/">
+              <Image
+                src="/logo_small.png"
+                alt="Picture of the author"
+                width={55}
+                height={45}
+                className="h-4 md:h-9 cursor-pointer"
+              />
+            </Link>
+          </div>
           <div className="flex md:order-2">
             <button
               type="button"
@@ -29,7 +36,7 @@ const Header = () => {
             >
               Login
               <svg
-                className="w-4 h-4 md:w-6 md:h-6 ml-2 "
+                className="w-5 h-5 md:w-6 md:h-6 ml-2 "
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
