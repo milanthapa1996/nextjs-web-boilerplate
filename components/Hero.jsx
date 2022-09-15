@@ -1,12 +1,11 @@
 import React from "react";
-import Link from "next/link";
 
 const Hero = () => {
   return (
     <div>
       <section className="bg-indigo-50 dark:bg-gray-900 mt-4">
         <div className="mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-          <Link
+          <a
             href="/courses"
             className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
           >
@@ -30,7 +29,7 @@ const Hero = () => {
                 ></path>
               </svg>
             </>
-          </Link>
+          </a>
           <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             NEPAL&apos;S NO. 1 CADET PREPARATION CLASSES
           </h1>
