@@ -1,123 +1,137 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsSunrise, BsSunsetFill } from "react-icons/bs";
+import {
+  BsBrightnessLowFill,
+  BsBrightnessLow,
+  BsXOctagon,
+  BsFillGridFill,
+} from "react-icons/bs";
 
 const Header = () => {
+  const menuList = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "Courses",
+      path: "/courses",
+    },
+    {
+      name: "Gallery",
+      path: "/gallery",
+    },
+    {
+      name: "Blog",
+      path: "/blog",
+    },
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
+  ];
+
+  const [open, setOpen] = useState(false);
+  const [theme, setTheme] = useState("dark");
   return (
     <>
-      <nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-        <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <div className="hidden sm:flex items-center">
+      <nav className="h-12 md:h-16 bg-white px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-100 md:opacity-80">
+        <div>
+          <div className="hidden md:block cursor-pointer">
             <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="Picture of the author"
-                width={200}
-                height={45}
-                className="h-4 md:h-9 cursor-pointer"
-              />
+              <Image src="/logo.png" width={200} height={50} />
             </Link>
           </div>
-          <div className="sm:hidden flex items-center">
+          <div className="md:hidden block">
             <Link href="/">
-              <Image
-                src="/logo_small.png"
-                alt="Picture of the author"
-                width={55}
-                height={45}
-                className="h-4 md:h-9 cursor-pointer"
-              />
+              <Image src="/logo_small.png" width={50} height={40} />
             </Link>
-          </div>
-          <div className="flex md:order-2 space-x-4">
-            <button
-              type="button"
-              className="flex justify-center items-center text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
-            >
-              Login
-              <svg
-                className="w-5 h-5 md:w-6 md:h-6 ml-2 "
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-                ></path>
-              </svg>
-            </button>
-            <button>
-              <BsSunsetFill className="text-2xl md:text-4xl text-gray-500 dark:text-gray-400" />
-            </button>
-            <button
-              data-collapse-toggle="navbar-sticky"
-              type="button"
-              className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-sticky"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-6 h-6"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div
-            className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
-            id="navbar-sticky"
-          >
-            <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <Link
-                  href="/"
-                  className="block py-2 pr-4 pl-3 text-white bg-primary-600 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
-                  aria-current="page"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/courses"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Courses
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
           </div>
         </div>
+        <div className="hidden md:flex">
+          <ul className="flex justify-center items-center space-x-8">
+            {menuList.map((item, index) => (
+              <li key={index}>
+                <Link href={item.path}>
+                  <a className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
+                    {item.name}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="space-x-2 flex justify-center items-center">
+          <a
+            href="#"
+            className="hidden md:inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          >
+            Login
+          </a>
+          <button className="rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5">
+            {theme === "normal" ? (
+              <BsBrightnessLowFill
+                className="text-3xl"
+                onClick={() => setTheme("dark")}
+              />
+            ) : (
+              <BsBrightnessLow
+                className="text-3xl"
+                onClick={() => setTheme("normal")}
+              />
+            )}
+          </button>
+          <button
+            className=" flex md:hidden rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5"
+            onClick={() => setOpen(true)}
+          >
+            <BsFillGridFill className="text-3xl text-gray-900" />
+          </button>
+        </div>
+        {open && (
+          <div
+            className="flex md:hidden fixed top-0 left-0 bg-black/80 w-full h-screen"
+            id="sidebar"
+          >
+            <div
+              className={`bg-indigo-100 z-[200] h-screen w-[60%] md:hidden ease-in-out duration-300 ${
+                open ? "translate-x-0 " : "translate-x-full"
+              }`}
+            >
+              <div className="h-14 p-4 shadow-md flex justify-between items-center">
+                <div>
+                  <Image src="/logo_small.png" width={50} height={40} />
+                </div>
+                <div>
+                  <button
+                    className="rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5"
+                    onClick={() => setOpen(false)}
+                  >
+                    <BsXOctagon className="text-3xl text-gray-900" />
+                  </button>
+                </div>
+              </div>
+              <div className="p-4">
+                <ul className="flex flex-col space-y-4">
+                  {menuList.map((item, index) => (
+                    <li key={index} onClick={()=>setOpen(false)}>
+                      <Link href={item.path}>
+                        <a className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
+                          {item.name}
+                        </a>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
     </>
   );
