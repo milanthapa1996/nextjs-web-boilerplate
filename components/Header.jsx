@@ -103,7 +103,7 @@ const Header = () => {
                 open ? "translate-x-0 " : "translate-x-full"
               }`}
             >
-              <div className="h-14 p-4 shadow-md flex justify-between items-center">
+              <div className="h-14 p-4 shadow-md flex justify-between items-center bg-white">
                 <div>
                   <Image src="/logo_small.png" width={50} height={40} />
                 </div>
@@ -119,15 +119,20 @@ const Header = () => {
               <div className="p-4">
                 <ul className="flex flex-col space-y-4">
                   {menuList.map((item, index) => (
-                    <li key={index} onClick={()=>setOpen(false)}>
-                      <Link href={item.path}>
-                        <a className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
-                          {item.name}
-                        </a>
-                      </Link>
-                    </li>
+                    <Link href={item.path}>
+                      <li
+                        key={index}
+                        onClick={() => setOpen(false)}
+                        className="cursor-pointer text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500"
+                      >
+                        {item.name}
+                      </li>
+                    </Link>
                   ))}
                 </ul>
+                <div className="w-full inline-flex justify-center items-center text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">
+                  Login
+                </div>
               </div>
             </div>
           </div>
