@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import { BsArrowBarLeft, BsArrowBarRight } from "react-icons/bs";
+import Link from "next/link";
 
 const NewsTicker = () => {
   return (
@@ -23,17 +24,17 @@ const NewsTicker = () => {
         >
           <div className="flex h-full items-center justify-center  rounded-none   dark:bg-gray-700 dark:text-white text-xs md:text-lg">
             <span className="w-[70%] truncate text-gray-500 hover:text-blue-400">
-              <a href="/blog/lorem-ipsum">lorem ipsum</a>
+              <Link href="/blog/lorem-ipsum">lorem ipsum</Link>
             </span>
           </div>
           <div className="flex h-full items-center justify-center rounded-none    dark:bg-gray-700 dark:text-white text-xs md:text-lg truncate">
             <span className="w-[70%] truncate text-gray-500 hover:text-blue-400">
-              <a href="/blog/lorem-ipsum">
+              <Link href="/blog/lorem-ipsum">
                 lorem Itaque earum quam consequuntur quijasdfk ajsdfkja ashdhfkj
                 ajsfh quijasdfk ajsdfkja ashdhfkj ajsfh Itaque earum quam
                 consequuntur quijasdfk ajsdfkja ashdhfkj ajsfh quijasdfk
                 ajsdfkja ashdhfkj ajsfh
-              </a>
+              </Link>
             </span>
           </div>
         </Carousel>
