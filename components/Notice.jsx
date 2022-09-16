@@ -66,11 +66,11 @@ const Notice = () => {
   return (
     <div
       id="notice-list"
-      className="w-full md:w-[25%] bg-gray-100 rounded-lg h-56 sm:h-64 xl:h-80 2xl:h-96 overflow-y-auto relative shadow-md shadow-gray-300"
+      className="w-full md:w-[25%] bg-white rounded-lg h-56 sm:h-64 xl:h-80 2xl:h-96 overflow-y-auto relative shadow-md shadow-gray-300"
     >
       <div
         id="title"
-        className="z-20 bg-gray-50 w-full sticky top-0 p-4 rounded-t-lg flex items-center justify-between"
+        className="z-20 bg-indigo-50 w-full sticky top-0 p-4 rounded-t-lg flex items-center justify-between"
       >
         <h1 className="text-lg font-medium">Notice</h1>
         <span className="text-sm underline text-blue-700 cursor-pointer">

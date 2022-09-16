@@ -5,6 +5,7 @@ import Directors from "../components/Directors";
 import Teams from "../components/Teams";
 import Testimonials from "../components/Testimonials";
 import NewsTicker from "../components/NewsTicker";
+import Stats from "../components/Stats";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Directors />
         <Teams />
         <Testimonials />
+        <Stats />
       </main>
     </div>
   );

@@ -5,8 +5,8 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 const Directors = () => {
   return (
     <div className="bg-indigo-50 py-16 px-4">
-      <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-12">
-        Meet our <span class="text-blue-600 dark:text-blue-500">Directors</span>{" "}
+      <h1 className="mt-24 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-24">
+        Our <span class="text-primary-700 dark:text-blue-500">Directors</span>{" "}
       </h1>
       <div className="h-72 sm:h-64 xl:h-80 2xl:h-96">
         <Carousel
@@ -55,7 +55,7 @@ const Directors = () => {
             </div>
             <div className="w-full md:w-[50%] h-[50%] md:h-full">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-3xl"
                 src="https://media.istockphoto.com/photos/face-close-up-muted-colors-low-key-portrait-black-hair-picture-id490634084?b=1&k=20&m=490634084&s=612x612&w=0&h=ZL8e7T16iyKxK23PhZV8KCaCmKaOfzILMwnnn_Zh51w="
                 alt="profile picture"
               />
@@ -98,7 +98,7 @@ const Directors = () => {
             </div>
             <div className="w-full md:w-[50%] h-[50%] md:h-full">
               <img
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-3xl"
                 src="https://media.istockphoto.com/photos/young-handsome-man-with-beard-wearing-casual-sweater-and-glasses-over-picture-id1212960962?k=20&m=1212960962&s=612x612&w=0&h=o2PGY4yhn51XSnYi60dMCQqvXQ0d-odkaKUVocbYYLk="
                 alt="profile picture"
               />
