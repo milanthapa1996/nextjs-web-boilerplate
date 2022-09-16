@@ -80,7 +80,7 @@ const Notice = () => {
       <div id="list">
         <ul
           role="list"
-          class="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500 pt-2"
+          className="marker:text-sky-400 list-disc pl-5 space-y-3 text-slate-500 pt-2"
         >
           {noticeList.map((notice, index) => (
             <li key={index} className="border-b-2 pb-1 border-gray-50">

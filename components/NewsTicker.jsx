@@ -21,12 +21,12 @@ const NewsTicker = () => {
           }
           slideInterval={1000}
         >
-          <div className="flex h-full items-center justify-center items-center rounded-none   dark:bg-gray-700 dark:text-white text-xs md:text-lg">
+          <div className="flex h-full items-center justify-center  rounded-none   dark:bg-gray-700 dark:text-white text-xs md:text-lg">
             <span className="w-[70%] truncate text-gray-500 hover:text-blue-400">
               <a href="/blog/lorem-ipsum">lorem ipsum</a>
             </span>
           </div>
-          <div className="flex h-full items-center justify-center items-center rounded-none    dark:bg-gray-700 dark:text-white text-xs md:text-lg truncate">
+          <div className="flex h-full items-center justify-center rounded-none    dark:bg-gray-700 dark:text-white text-xs md:text-lg truncate">
             <span className="w-[70%] truncate text-gray-500 hover:text-blue-400">
               <a href="/blog/lorem-ipsum">
                 lorem Itaque earum quam consequuntur quijasdfk ajsdfkja ashdhfkj

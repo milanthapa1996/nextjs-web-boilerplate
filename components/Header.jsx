@@ -40,7 +40,7 @@ const Header = () => {
   const [theme, setTheme] = useState("dark");
   return (
     <>
-      <nav className="h-12 md:h-16 bg-white px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-100 md:opacity-80">
+      <nav className="h-12 md:h-16 px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-100 md:opacity-80">
         <div>
           <div className="hidden md:block cursor-pointer">
             <Link href="/">
@@ -56,36 +56,36 @@ const Header = () => {
         <div className="hidden md:flex">
           <ul className="flex justify-center items-center space-x-8">
             {menuList.map((item, index) => (
-              <li key={index}>
-                <Link href={item.path}>
-                  <a className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
-                    {item.name}
-                  </a>
-                </Link>
-              </li>
+              <Link href={item.path} key={index}>
+                <li className="text-gray-600 dark:text-gray-400  dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
+                  {item.name}
+                </li>
+              </Link>
             ))}
           </ul>
         </div>
         <div className="space-x-2 flex justify-center items-center">
-          <a
-            href="#"
-            className="hidden md:inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
-          >
-            Login
-          </a>
-          <button className="rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5">
-            {theme === "normal" ? (
-              <BsBrightnessLowFill
-                className="text-3xl"
-                onClick={() => setTheme("dark")}
-              />
-            ) : (
-              <BsBrightnessLow
-                className="text-3xl"
-                onClick={() => setTheme("normal")}
-              />
-            )}
-          </button>
+          <Link href="/login">
+            <span className="hidden md:inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              Login
+            </span>
+          </Link>
+
+          {theme === "normal" ? (
+            <button
+              className="rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5"
+              onClick={() => setTheme("dark")}
+            >
+              <BsBrightnessLowFill className="text-3xl" />
+            </button>
+          ) : (
+            <button
+              className="rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5"
+              onClick={() => setTheme("normal")}
+            >
+              <BsBrightnessLow className="text-3xl" />
+            </button>
+          )}
           <button
             className=" flex md:hidden rounded-lg focus:ring-2 focus:ring-indigo-300 dark:focus:ring-indigo-900 p-0.5"
             onClick={() => setOpen(true)}
@@ -119,11 +119,11 @@ const Header = () => {
               <div className="p-4">
                 <ul className="flex flex-col space-y-4">
                   {menuList.map((item, index) => (
-                    <Link href={item.path}>
+                    <Link href={item.path} key={index}>
                       <li
                         key={index}
                         onClick={() => setOpen(false)}
-                        className="cursor-pointer text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500"
+                        className="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500"
                       >
                         {item.name}
                       </li>

@@ -1,31 +1,32 @@
 import React from "react";
-import { BsFacebook, BsTwitter, BsGithub, BsInstagram } from "react-icons/bs";
 
 const Testimonials = () => {
   return (
     <div className="bg-indigo-50 py-16 px-4">
       <h1 className=" mt-24 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-24">
-        <span class="text-primary-700 dark:text-blue-500">Testimonials</span>{" "}
+        <span className="text-primary-700 dark:text-blue-500">
+          Testimonials
+        </span>{" "}
       </h1>
-      <div class="mt-24 mx-auto mb-24">
-        <section class="mb-12 text-gray-800 text-center">
-          <div class="grid md:grid-cols-3 gap-4 lg:gap-x-12">
-            <div class=" bg-white px-4 py-6 rounded-lg shadow-sm">
-              <div class="flex justify-center mb-6">
+      <div className="mt-24 mx-auto mb-24">
+        <section className="mb-12 text-gray-800 text-center">
+          <div className="grid md:grid-cols-3 gap-4 lg:gap-x-12">
+            <div className=" bg-white px-4 py-6 rounded-lg shadow-sm">
+              <div className="flex justify-center mb-6">
                 <img
                   src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                  class="rounded-full shadow-lg w-32"
+                  className="rounded-full shadow-lg w-32"
                 />
               </div>
-              <h5 class="text-lg font-bold mb-4">Maria Smantha</h5>
-              <h6 class="font-medium text-blue-600 mb-4">Web Developer</h6>
-              <p class="mb-4">
+              <h5 className="text-lg font-bold mb-4">Maria Smantha</h5>
+              <h6 className="font-medium text-blue-600 mb-4">Web Developer</h6>
+              <p className="mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="quote-left"
-                  class="w-6 pr-2 inline-block"
+                  className="w-6 pr-2 inline-block"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -39,14 +40,14 @@ const Testimonials = () => {
                 eos id officiis hic tenetur quae quaerat ad velit ab hic
                 tenetur.
               </p>
-              <ul class="flex justify-center mb-0">
+              <ul className="flex justify-center mb-0">
                 <li>
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -63,7 +64,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -80,7 +81,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -97,7 +98,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -114,7 +115,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star-half-alt"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 536 512"
@@ -127,22 +128,24 @@ const Testimonials = () => {
                 </li>
               </ul>
             </div>
-            <div class="bg-white px-4 py-6 rounded-lg shadow-sm">
-              <div class="flex justify-center mb-6">
+            <div className="bg-white px-4 py-6 rounded-lg shadow-sm">
+              <div className="flex justify-center mb-6">
                 <img
                   src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"
-                  class="rounded-full shadow-lg w-32"
+                  className="rounded-full shadow-lg w-32"
                 />
               </div>
-              <h5 class="text-lg font-bold mb-4">Lisa Cudrow</h5>
-              <h6 class="font-medium text-blue-600 mb-4">Graphic Designer</h6>
-              <p class="mb-4">
+              <h5 className="text-lg font-bold mb-4">Lisa Cudrow</h5>
+              <h6 className="font-medium text-blue-600 mb-4">
+                Graphic Designer
+              </h6>
+              <p className="mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="quote-left"
-                  class="w-6 pr-2 inline-block"
+                  className="w-6 pr-2 inline-block"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -155,14 +158,14 @@ const Testimonials = () => {
                 Ut enim ad minima veniam, quis nostrum exercitationem ullam
                 corporis suscipit laboriosam, nisi ut aliquid commodi.
               </p>
-              <ul class="flex justify-center mb-0">
+              <ul className="flex justify-center mb-0">
                 <li>
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -179,7 +182,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -196,7 +199,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -213,7 +216,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -230,7 +233,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -243,24 +246,24 @@ const Testimonials = () => {
                 </li>
               </ul>
             </div>
-            <div class="bg-white px-4 py-6 rounded-lg shadow-sm">
-              <div class="flex justify-center mb-6">
+            <div className="bg-white px-4 py-6 rounded-lg shadow-sm">
+              <div className="flex justify-center mb-6">
                 <img
                   src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-                  class="rounded-full shadow-lg w-32"
+                  className="rounded-full shadow-lg w-32"
                 />
               </div>
-              <h5 class="text-lg font-bold mb-4">John Smith</h5>
-              <h6 class="font-medium text-blue-600 mb-4">
+              <h5 className="text-lg font-bold mb-4">John Smith</h5>
+              <h6 className="font-medium text-blue-600 mb-4">
                 Marketing Specialist
               </h6>
-              <p class="mb-4">
+              <p className="mb-4">
                 <svg
                   aria-hidden="true"
                   focusable="false"
                   data-prefix="fas"
                   data-icon="quote-left"
-                  class="w-6 pr-2 inline-block"
+                  className="w-6 pr-2 inline-block"
                   role="img"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
@@ -273,14 +276,14 @@ const Testimonials = () => {
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti.
               </p>
-              <ul class="flex justify-center mb-0">
+              <ul className="flex justify-center mb-0">
                 <li>
                   <svg
                     aria-hidden="true"
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -297,7 +300,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -314,7 +317,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -331,7 +334,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="fas"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"
@@ -348,7 +351,7 @@ const Testimonials = () => {
                     focusable="false"
                     data-prefix="far"
                     data-icon="star"
-                    class="w-4 text-yellow-500"
+                    className="w-4 text-yellow-500"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"

@@ -12,7 +12,7 @@ const Teams = () => {
               <div className="text-center mx-auto mb-[60px] max-w-[510px]">
                 <h1 className=" text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-12">
                   Our{" "}
-                  <span class="text-primary-700 dark:text-blue-500">
+                  <span className="text-primary-700 dark:text-blue-500">
                     Teams
                   </span>{" "}
                 </h1>
@@ -62,7 +62,7 @@ const Teams = () => {
                               cy="45"
                               r="45"
                               fill="#13C296"
-                              fill-opacity="0.11"
+                              fillOpacity="0.11"
                             />
                           </svg>
                         </span>
@@ -260,7 +260,7 @@ const Teams = () => {
                               cy="45"
                               r="45"
                               fill="#13C296"
-                              fill-opacity="0.11"
+                              fillOpacity="0.11"
                             />
                           </svg>
                         </span>
@@ -458,7 +458,7 @@ const Teams = () => {
                               cy="45"
                               r="45"
                               fill="#13C296"
-                              fill-opacity="0.11"
+                              fillOpacity="0.11"
                             />
                           </svg>
                         </span>
@@ -656,7 +656,7 @@ const Teams = () => {
                               cy="45"
                               r="45"
                               fill="#13C296"
-                              fill-opacity="0.11"
+                              fillOpacity="0.11"
                             />
                           </svg>
                         </span>
