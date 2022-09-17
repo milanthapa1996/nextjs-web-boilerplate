@@ -24,7 +24,7 @@ const Header = () => {
     },
     {
       name: "Blog",
-      path: "/blog",
+      path: "https://blog.dima-website.vercel.app/",
     },
     {
       name: "About",
@@ -55,13 +55,21 @@ const Header = () => {
         </div>
         <div className="hidden md:flex">
           <ul className="flex justify-center items-center space-x-8">
-            {menuList.map((item, index) => (
-              <Link href={item.path} key={index}>
-                <li className="text-gray-600 dark:text-gray-400  dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
-                  {item.name}
-                </li>
-              </Link>
-            ))}
+            {menuList.map((item, index) =>
+              item.name === "Blog" ? (
+                <a target="_blank" href={item.path} rel="noopener noreferrer">
+                  <li className="cursor-pointer text-gray-600 dark:text-gray-400  dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
+                    {item.name}
+                  </li>
+                </a>
+              ) : (
+                <Link href={item.path} key={index}>
+                  <li className="cursor-pointer text-gray-600 dark:text-gray-400  dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
+                    {item.name}
+                  </li>
+                </Link>
+              )
+            )}
           </ul>
         </div>
         <div className="space-x-2 flex justify-center items-center">
