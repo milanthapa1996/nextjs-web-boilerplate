@@ -19,6 +19,10 @@ const Header = () => {
       path: "/courses",
     },
     {
+      name: "Teams",
+      path: "/teams",
+    },
+    {
       name: "Gallery",
       path: "/gallery",
     },
@@ -40,7 +44,7 @@ const Header = () => {
   const [theme, setTheme] = useState("dark");
   return (
     <>
-      <nav className="h-12 md:h-16 px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-100 md:opacity-80">
+      <nav className="h-12 md:h-16 px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-100 opacity-90">
         <div>
           <div className="hidden md:block cursor-pointer">
             <Link href="/">
@@ -57,7 +61,12 @@ const Header = () => {
           <ul className="flex justify-center items-center space-x-8">
             {menuList.map((item, index) =>
               item.name === "Blog" ? (
-                <a target="_blank" href={item.path} rel="noopener noreferrer">
+                <a
+                  target="_blank"
+                  href={item.path}
+                  rel="noopener noreferrer"
+                  key={index}
+                >
                   <li className="cursor-pointer text-gray-600 dark:text-gray-400  dark:hover:text-gray-100 text-md font-medium hover:text-primary-500">
                     {item.name}
                   </li>
@@ -107,7 +116,7 @@ const Header = () => {
             id="sidebar"
           >
             <div
-              className={`bg-indigo-100 z-[200] h-screen w-[60%] md:hidden ease-in-out duration-300 ${
+              className={`bg-indigo-100 z-[200] h-screen w-full md:hidden ease-in-out duration-300 ${
                 open ? "translate-x-0 " : "translate-x-full"
               }`}
             >
@@ -125,18 +134,35 @@ const Header = () => {
                 </div>
               </div>
               <div className="p-4">
-                <ul className="flex flex-col space-y-4">
-                  {menuList.map((item, index) => (
-                    <Link href={item.path} key={index}>
-                      <li
+                <ul className="flex flex-col justify-center items-center space-y-6">
+                  {menuList.map((item, index) =>
+                    item.name === "Blog" ? (
+                      <a
+                        target="_blank"
+                        href={item.path}
+                        rel="noopener noreferrer"
                         key={index}
-                        onClick={() => setOpen(false)}
-                        className="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500"
                       >
-                        {item.name}
-                      </li>
-                    </Link>
-                  ))}
+                        <li
+                          key={index}
+                          onClick={() => setOpen(false)}
+                          className="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500"
+                        >
+                          {item.name}
+                        </li>
+                      </a>
+                    ) : (
+                      <Link href={item.path} key={index}>
+                        <li
+                          key={index}
+                          onClick={() => setOpen(false)}
+                          className="cursor-pointer text-gray-600 dark:text-gray-400 dark:hover:text-gray-100 text-md font-medium hover:text-primary-500"
+                        >
+                          {item.name}
+                        </li>
+                      </Link>
+                    )
+                  )}
                 </ul>
                 <div className="w-full inline-flex justify-center items-center text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-md px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4">
                   Login
