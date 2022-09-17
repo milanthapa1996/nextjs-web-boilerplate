@@ -8,6 +8,7 @@ import NewsTicker from "../components/NewsTicker";
 import Stats from "../components/Stats";
 import BlogBanner from "../components/BlogBanner";
 import LatestBLog from "../components/LatestBLog";
+import WhySection from "../components/WhySection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <NewsTicker />
         <Slider />
         <Hero />
+        <WhySection />
         <Directors />
         <Teams />
         <BlogBanner />

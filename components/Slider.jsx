@@ -5,7 +5,7 @@ import Notice from "./Notice";
 const Slider = () => {
   return (
     <div className="flex flex-col md:flex-row md:space-x-2 md:space-y-0">
-      <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 w-full md:w-[75%] shadow-md mb-4 md:mb-0">
+      <div className="h-40 sm:h-64 xl:h-80 2xl:h-96 w-full md:w-[75%] shadow-md mb-4 md:mb-0">
         <Carousel>
           <img
             src="https://img.freepik.com/free-vector/modern-website-banner-template-with-abstract-shapes_1361-3311.jpg?w=2000"

@@ -15,7 +15,7 @@ const Testimonials = () => {
               <div className="flex justify-center mb-6">
                 <img
                   src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                  className="rounded-full shadow-lg w-32"
+                  className="rounded-full shadow-lg w-32 hover:scale-105 transition duration-300 ease-in-out transform hover:shadow-2xl cursor-pointer"
                 />
               </div>
               <h5 className="text-lg font-bold mb-4">Maria Smantha</h5>
@@ -132,7 +132,7 @@ const Testimonials = () => {
               <div className="flex justify-center mb-6">
                 <img
                   src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"
-                  className="rounded-full shadow-lg w-32"
+                  className="rounded-full shadow-lg w-32 hover:scale-105 transition duration-300 ease-in-out transform hover:shadow-2xl cursor-pointer"
                 />
               </div>
               <h5 className="text-lg font-bold mb-4">Lisa Cudrow</h5>
@@ -250,7 +250,7 @@ const Testimonials = () => {
               <div className="flex justify-center mb-6">
                 <img
                   src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
-                  className="rounded-full shadow-lg w-32"
+                  className="rounded-full shadow-lg w-32 hover:scale-105 transition duration-300 ease-in-out transform hover:shadow-2xl cursor-pointer"
                 />
               </div>
               <h5 className="text-lg font-bold mb-4">John Smith</h5>

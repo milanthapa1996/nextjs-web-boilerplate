@@ -120,7 +120,7 @@ const Header = () => {
                 open ? "translate-x-0 " : "translate-x-full"
               }`}
             >
-              <div className="h-14 p-4 shadow-md flex justify-between items-center bg-white">
+              <div className="h-12 p-4 shadow-md flex justify-between items-center bg-white">
                 <div>
                   <Image src="/logo_small_1.png" width={50} height={40} />
                 </div>
