@@ -44,16 +44,16 @@ const Header = () => {
   const [theme, setTheme] = useState("dark");
   return (
     <>
-      <nav className="h-12 md:h-16 px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-100 opacity-90">
+      <nav className="h-12 md:h-16 px-2 sm:px-4 py-8 dark:bg-gray-900 sticky w-full z-[100] top-0 left-0 shadow-sm flex justify-between items-center bg-indigo-50 opacity-90">
         <div>
           <div className="hidden md:block cursor-pointer">
             <Link href="/">
-              <Image src="/logo.png" width={200} height={50} />
+              <Image src="/logo_1.png" width={200} height={50}/>
             </Link>
           </div>
-          <div className="md:hidden block">
+          <div className="md:hidden block cursor-pointer">
             <Link href="/">
-              <Image src="/logo_small.png" width={50} height={40} />
+              <Image src="/logo_small_1.png" width={50} height={40} />
             </Link>
           </div>
         </div>
@@ -122,7 +122,7 @@ const Header = () => {
             >
               <div className="h-14 p-4 shadow-md flex justify-between items-center bg-white">
                 <div>
-                  <Image src="/logo_small.png" width={50} height={40} />
+                  <Image src="/logo_small_1.png" width={50} height={40} />
                 </div>
                 <div>
                   <button
