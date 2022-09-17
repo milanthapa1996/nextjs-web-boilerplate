@@ -6,6 +6,8 @@ import Teams from "../components/Teams";
 import Testimonials from "../components/Testimonials";
 import NewsTicker from "../components/NewsTicker";
 import Stats from "../components/Stats";
+import BlogBanner from "../components/BlogBanner";
+import LatestBLog from "../components/LatestBLog";
 
 export default function Home() {
   return (
@@ -17,13 +19,15 @@ export default function Home() {
       </Head>
 
       <main className="p-4 space-y-2">
-        <NewsTicker/>
+        <NewsTicker />
         <Slider />
         <Hero />
         <Directors />
         <Teams />
+        <BlogBanner />
         <Testimonials />
         <Stats />
+        <LatestBLog />
       </main>
     </div>
   );

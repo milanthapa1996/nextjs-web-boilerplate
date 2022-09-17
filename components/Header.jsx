@@ -83,7 +83,7 @@ const Header = () => {
         </div>
         <div className="space-x-2 flex justify-center items-center">
           <Link href="/login">
-            <span className="hidden md:inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+            <span className="hidden md:inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
               Login
             </span>
           </Link>

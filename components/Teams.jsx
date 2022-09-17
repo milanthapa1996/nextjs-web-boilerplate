@@ -4,13 +4,13 @@ import { Carousel } from "flowbite-react";
 
 const Teams = () => {
   return (
-    <div className="bg-indigo-50 py-16 px-4">
+    <div className="bg-indigo-50 py-8 px-4">
       <section className="pt-20 lg:pt-[100px] pb-10 lg:pb-20">
         <div>
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="text-center mx-auto mb-[60px] max-w-[510px]">
-                <h1 className=" text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-12">
+                <h1 className=" text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-16">
                   Our{" "}
                   <span className="text-primary-700 dark:text-blue-500">
                     Teams

@@ -8,7 +8,7 @@ const NewsTicker = () => {
     <div className="h-8 md:h-10 flex">
       <div className="w-[20%] md:w-[10%] bg-indigo-100 flex justify-center items-center rounded-lg">
         <span className="text-red-500 text-sm md:text-xl font-bold p-1">
-          News
+          Notice
         </span>
       </div>
       <div className="h-8 md:h-10 w-[80%] md:w-[90%] flex justify-center items-center rounded-none">

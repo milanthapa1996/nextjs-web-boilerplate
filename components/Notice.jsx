@@ -72,7 +72,7 @@ const Notice = () => {
         id="title"
         className="z-20 bg-indigo-50 w-full sticky top-0 p-4 rounded-t-lg flex items-center justify-between"
       >
-        <h1 className="text-lg font-medium">Notice</h1>
+        <h1 className="text-lg font-bold text-primary-700">Important Links</h1>
         <span className="text-sm underline text-blue-700 cursor-pointer">
           view all
         </span>

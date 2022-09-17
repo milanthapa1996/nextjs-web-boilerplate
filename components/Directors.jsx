@@ -5,7 +5,7 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from "react-icons/bs";
 const Directors = () => {
   return (
     <div className="bg-indigo-50 py-16 px-4">
-      <h1 className="mt-24 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-24">
+      <h1 className="mt-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center mb-16">
         Our{" "}
         <span className="text-primary-700 dark:text-blue-500">Directors</span>{" "}
       </h1>
